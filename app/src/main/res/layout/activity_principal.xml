@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PrincipalActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageViewCliente"
+        android:layout_width="122dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        android:onClick="irParaClientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cliente" />
+
+    <ImageView
+        android:id="@+id/imageViewProduto"
+        android:layout_width="129dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="irParaProdutos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCliente"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doce" />
+
+    <ImageView
+        android:id="@+id/imageViewFinança"
+        android:layout_width="132dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:onClick="irParaFinanceiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProduto"
+        app:srcCompat="@drawable/carteira" />
+
+    <Button
+        android:id="@+id/buttonCliente"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="irParaClientes"
+        android:text="@string/clientes"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCliente"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCliente" />
+
+    <Button
+        android:id="@+id/buttonProduto"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="irParaProdutos"
+        android:text="@string/produtos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProduto"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toEndOf="@+id/buttonCliente"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProduto" />
+
+    <Button
+        android:id="@+id/buttonEncomenda"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:onClick="irParaEncomendas"
+        android:text="@string/encomendas"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFinança"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewEncomenda"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEncomenda" />
+
+    <Button
+        android:id="@+id/buttonFinança"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="irParaFinanceiro"
+        android:text="@string/finanças"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFinança"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFinança" />
+
+    <ImageView
+        android:id="@+id/imageViewEncomenda"
+        android:layout_width="132dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="irParaEncomendas"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFinança"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCliente"
+        app:srcCompat="@drawable/encomenda" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableBottom="@android:drawable/ic_menu_info_details"
+        android:onClick="sobreApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEncomenda" />
+
+</android.support.constraint.ConstraintLayout>

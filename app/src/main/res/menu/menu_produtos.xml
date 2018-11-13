@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuItemOrdenarPorNome"
+            android:title="@string/ordenar_por_nome" />
+        <item
+            android:id="@+id/menuItemOrdenarPorPreco"
+            android:title="@string/ordernar_por_valor" />
+    </group>
+    <item
+        android:id="@+id/menuItemNovoProduto"
+        android:icon="@android:drawable/ic_menu_add"
+        android:onClick="novoProduto"
+        android:title="@string/novo"
+        app:showAsAction="ifRoom" />
+</menu>

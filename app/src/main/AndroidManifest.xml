@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.caah_.comamorbc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.PrincipalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.CadastrarProduto"
+            android:parentActivityName=".view.ProdutosView" />
+        <activity
+            android:name=".view.ProdutosView"
+            android:parentActivityName=".view.PrincipalActivity" />
+        <activity
+            android:name=".view.EncomendasView"
+            android:parentActivityName=".view.PrincipalActivity" />
+        <activity
+            android:name=".view.ClientesView"
+            android:parentActivityName=".view.PrincipalActivity" />
+        <activity
+            android:name=".view.FinanceiroView"
+            android:parentActivityName=".view.PrincipalActivity" />
+        <activity
+            android:name=".view.CadastrarCliente"
+            android:parentActivityName=".view.ClientesView" />
+        <activity
+            android:name=".view.CadastrarEncomenda"
+            android:parentActivityName=".view.EncomendasView" />
+        <activity
+            android:name=".view.CadastroFinancas"
+            android:parentActivityName=".view.FinanceiroView" />
+        <activity
+            android:name=".view.SobreActivity"
+            android:parentActivityName=".view.PrincipalActivity" />
+        <activity android:name=".view.EncomendasDetalhes"></activity>
+    </application>
+
+</manifest>
